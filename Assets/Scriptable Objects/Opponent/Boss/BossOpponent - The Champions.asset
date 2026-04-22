@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77410ffa1aa54b5a99088b737d5b259, type: 3}
+  m_Name: BossOpponent - The Champions
+  m_EditorClassIdentifier: Assembly-CSharp::OpponentData
+  teamName: The Champions
+  teamLogo: {fileID: 0}
+  teamColor: {r: 1, g: 1, b: 1, a: 1}
+  teamDescription: 'Reigning Champion, the ultimate test '
+  difficulty: 3
+  q1TargetModifier: 15
+  q2TargetModifier: 20
+  q3TargetModifier: 30
+  q4TargetModifier: 40
+  primaryDefense: 7
+  defenseStrength: 1.5
+  abilities:
+  - abilityName: Championship Pressure
+    description: Increase Target by 20
+    trigger: 0
+    effect: 2
+    value: 20
+  - abilityName: Momentum Shift
+    description: Reduce plays by 3
+    trigger: 3
+    effect: 4
+    value: 3
+  - abilityName: Finals Tax
+    description: Lose $50 when behind
+    trigger: 7
+    effect: 5
+    value: 50
+  moneyMultiplier: 2

@@ -1,0 +1,31 @@
+# === CRITICAL: Ignore entire Unity generated folder ===
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+[Tt]oolSettings/
+Exports/
+
+# Unity user settings (safe to ignore)
+[Uu]ser[Ss]ettings/
+
+# IDE files
+*.csproj
+*.sln
+*.pidb
+*.userprefs
+*.booproj
+*.svd
+*.suo
+.idea/
+.vscode/
+*.DS_Store
+
+# Build artifacts
+*.apk
+*.aab
+*.ipa
+*.xcarchive*.DS_Store

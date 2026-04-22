@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: f915371e409fa4b9e99a27eca414ab39
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4988184835844183694
+    second: Blithe Final_0
+  - first:
+      213: -5724552371046613439
+    second: Blithe Final_1
+  - first:
+      213: 917928645620237610
+    second: Blithe Final_2
+  - first:
+      213: 254675263220761761
+    second: Blithe Final_3
+  - first:
+      213: -6332155387774703482
+    second: Blithe Final_4
+  - first:
+      213: -8032033835017081861
+    second: Blithe Final_5
+  - first:
+      213: 3172380617174257522
+    second: Blithe Final_6
+  - first:
+      213: -5770399648923124939
+    second: Blithe Final_7
+  - first:
+      213: 4044118282434160793
+    second: Blithe Final_8
+  - first:
+      213: -2965080161603039952
+    second: Blithe Final_9
+  - first:
+      213: -3429877940959073867
+    second: Blithe Final_10
+  - first:
+      213: 8686877208894859180
+    second: Blithe Final_11
+  - first:
+      213: 6387834295949283331
+    second: Blithe Final_12
+  - first:
+      213: -4379887636438017857
+    second: Blithe Final_13
+  - first:
+      213: -881021309439987694
+    second: Blithe Final_14
+  - first:
+      213: -2635395593194291911
+    second: Blithe Final_15
+  - first:
+      213: -6559903892929023564
+    second: Blithe Final_16
+  - first:
+      213: 4477724099951624230
+    second: Blithe Final_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Blithe Final_0
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 805
+        width: 1201
+        height: 1064
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e869b7efda7993540800000000000000
+      internalID: 4988184835844183694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blithe Final_1
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 482
+        width: 262
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14e75a1d2fd4e80b0800000000000000
+      internalID: -5724552371046613439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blithe Final_2
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 483
+        width: 193
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2589536d332dbc00800000000000000
+      internalID: 917928645620237610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blithe Final_3
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 483
+        width: 86
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a44a557dc9c88300800000000000000
+      internalID: 254675263220761761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blithe Final_4
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 483
+        width: 193
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 688ec19593aaf18a0800000000000000
+      internalID: -6332155387774703482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blithe Final_5
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 483
+        width: 233
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfb63e758cb788090800000000000000
+      internalID: -8032033835017081861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blithe Final_6
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 483
+        width: 207
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27f81030d5f860c20800000000000000
+      internalID: 3172380617174257522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blithe Final_7
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 361
+        width: 74
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53bf5e9971c6befa0800000000000000
+      internalID: -5770399648923124939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blithe Final_8
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 361
+        width: 63
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 998a626b6289f1830800000000000000
+      internalID: 4044118282434160793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blithe Final_9
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 361
+        width: 45
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03dc71d7d4be9d6d0800000000000000
+      internalID: -2965080161603039952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blithe Final_10
+      rect:
+        serializedVersion: 2
+        x: 1378
+        y: 361
+        width: 65
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b9af2a5f20a660d0800000000000000
+      internalID: -3429877940959073867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blithe Final_11
+      rect:
+        serializedVersion: 2
+        x: 1516
+        y: 432
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca76d93ebccfd8870800000000000000
+      internalID: 8686877208894859180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blithe Final_12
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 361
+        width: 58
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3005d1ea27526a850800000000000000
+      internalID: 6387834295949283331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blithe Final_13
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 362
+        width: 101
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb89cf976638733c0800000000000000
+      internalID: -4379887636438017857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blithe Final_14
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 361
+        width: 62
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 210b74379cbf5c3f0800000000000000
+      internalID: -881021309439987694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blithe Final_15
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 361
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93d3601cba13d6bd0800000000000000
+      internalID: -2635395593194291911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blithe Final_16
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 362
+        width: 22
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b1734d4a2a86f4a0800000000000000
+      internalID: -6559903892929023564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blithe Final_17
+      rect:
+        serializedVersion: 2
+        x: 1607
+        y: 361
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62082db4852142e30800000000000000
+      internalID: 4477724099951624230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Blithe Final_0: 4988184835844183694
+      Blithe Final_1: -5724552371046613439
+      Blithe Final_10: -3429877940959073867
+      Blithe Final_11: 8686877208894859180
+      Blithe Final_12: 6387834295949283331
+      Blithe Final_13: -4379887636438017857
+      Blithe Final_14: -881021309439987694
+      Blithe Final_15: -2635395593194291911
+      Blithe Final_16: -6559903892929023564
+      Blithe Final_17: 4477724099951624230
+      Blithe Final_2: 917928645620237610
+      Blithe Final_3: 254675263220761761
+      Blithe Final_4: -6332155387774703482
+      Blithe Final_5: -8032033835017081861
+      Blithe Final_6: 3172380617174257522
+      Blithe Final_7: -5770399648923124939
+      Blithe Final_8: 4044118282434160793
+      Blithe Final_9: -2965080161603039952
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

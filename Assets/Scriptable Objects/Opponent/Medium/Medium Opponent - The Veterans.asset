@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77410ffa1aa54b5a99088b737d5b259, type: 3}
+  m_Name: Medium Opponent - The Veterans
+  m_EditorClassIdentifier: Assembly-CSharp::OpponentData
+  teamName: The Veterans
+  teamLogo: {fileID: 0}
+  teamColor: {r: 1, g: 1, b: 1, a: 1}
+  teamDescription: 'Experienced Team with Solid Defense
+
+'
+  difficulty: 1
+  q1TargetModifier: 5
+  q2TargetModifier: 5
+  q3TargetModifier: 10
+  q4TargetModifier: 10
+  primaryDefense: 3
+  defenseStrength: 1.1
+  abilities:
+  - abilityName: Veteran Presence
+    description: Increase Target By 10
+    trigger: 0
+    effect: 2
+    value: 10
+  moneyMultiplier: 1.2
