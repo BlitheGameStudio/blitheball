@@ -17,12 +17,35 @@ public class PositionSynergyDetector : MonoBehaviour
 
 	public SynergyResult EvaluatePlayArea(List<Card> playedCards)
 	{
-		var result = new SynergyResult();
+		// ✅ CENTRALIZED FLAG CHECK - Early exit if system is disabled
+		if (!FeatureFlagsManager.Instance || !FeatureFlagsManager.Instance.enablePositionalSynergies)
+		{
+			return new SynergyResult 
+			{ 
+				activeSynergyNames = new List<string>(),
+				multiplierBonus = 1f,   // Neutral multiplier (won't affect score)
+				bonusPoints = 0         // No bonus points
+			};
+		}
+		
+		var result = new SynergyResult
+		{
+			activeSynergyNames = new List<string>(),
+			multiplierBonus = 1f, // Must start at 1x, otherwise it zeros out scoring!
+			bonusPoints = 0
+		};
+
 		var playedPositions = new List<Position>();
 
 		foreach (var card in playedCards)
-			if (card.data.cardPosition != Position.None)
+			if (card.data != null && card.data.cardPosition != Position.None)
 				playedPositions.Add(card.data.cardPosition);
+
+		if (synergyDatabase == null)
+		{
+			Debug.LogWarning("SynergyDatabase is empty! Assign SynergyData assets in the Inspector.");
+			return result;
+		}
 
 		foreach (var syn in synergyDatabase)
 		{

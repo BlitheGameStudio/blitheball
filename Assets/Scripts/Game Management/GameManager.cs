@@ -179,6 +179,10 @@ public class GameManager : MonoBehaviour
     
 	public void DrawCard()
 	{
+		Debug.Log($"[DrawHand] Called | Deck.count :" + deck.Count + " | DiscardPileCount: " + discardPile.Count); 
+		Debug.Log($"[DrawHand] Called | Hand count before: {hand.Count} | Cards to draw: {Mathf.Min(handSize + handSizeModifier, deck.Count + discardPile.Count)}");
+    
+		
 		if (deck.Count == 0)
 		{
 			if (discardPile.Count == 0)
@@ -197,6 +201,7 @@ public class GameManager : MonoBehaviour
 		deck.RemoveAt(0);
         
 		Debug.Log($"Drew card: {drawnCard.cardName}");
+		Debug.Log($"[DrawHand] Finished | Hand count after: {hand.Count}");
         
 		handManager.CreateCardInHand(drawnCard);
         
@@ -227,11 +232,29 @@ public class GameManager : MonoBehaviour
 	{
 		if (!CanPlayCard(card)) return;
     
-		hand.Remove(card);
-		playArea.Add(card);
-		currentPossessionCards++;
+		// ✅ ROBUST: Remove by matching instance ID (works even if references drift)
+		Card cardToRemove = null;
+		foreach (var c in hand)
+		{
+			if (c != null && c.GetInstanceID() == card.GetInstanceID())
+			{
+				cardToRemove = c;
+				break;
+			}
+		}
     
-		Debug.Log($"Cards played this possession: {currentPossessionCards}/{maxCardsPerPossession}");
+		if (cardToRemove != null)
+		{
+			hand.Remove(cardToRemove);
+		}
+		else
+		{
+			// Fallback: try direct remove (in case references match)
+			hand.Remove(card);
+		}
+    
+		playArea.Add(card);
+		remainingPlays -= card.data.playCost;
     
 		if (opponentManager != null)
 		{
@@ -239,21 +262,6 @@ public class GameManager : MonoBehaviour
 		}
     
 		uiManager.UpdateAllUI();
-    
-		// Check if possession is full
-		if (currentPossessionCards >= maxCardsPerPossession)
-		{
-			if (autoEndTurn)
-			{
-				// Auto-resolve possession
-				Invoke("EndTurn", 0.5f); // Small delay for visual feedback
-			}
-			else
-			{
-				// Disable playing more cards, but let player manually end turn
-				Debug.Log("Possession full! End turn to score.");
-			}
-		}
 	}
     
 	public void EndTurn()
@@ -319,9 +327,7 @@ public class GameManager : MonoBehaviour
 		}
 		else
 		{
-			// Draw new hand for next possession
-			DrawHand();
-			currentState = GameState.PlayPhase;
+			CheckGameContinuation();
 		}
 	}
     
@@ -464,6 +470,8 @@ public class GameManager : MonoBehaviour
     
 	void CheckGameContinuation()
 	{
+		Debug.Log($"[CheckGameContinuation] remainingPlays: {remainingPlays} | hand.Count: {hand.Count}");
+		
 		if (remainingPlays <= 0)
 		{
 			CheckLossCondition();

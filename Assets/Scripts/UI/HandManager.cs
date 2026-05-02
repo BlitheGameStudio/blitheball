@@ -39,6 +39,7 @@ public class HandManager : MonoBehaviour
 		RectTransform cardRect = cardObj.GetComponent<RectTransform>();
 		if (cardRect != null)
 		{
+			cardRect.anchoredPosition = Vector2.zero;
 			cardRect.localScale = Vector3.one;
 			cardRect.sizeDelta = cardSize; // Use inspector value
 		}
@@ -79,9 +80,9 @@ public class HandManager : MonoBehaviour
 				Vector3 targetPos = new Vector3(xPos, 0, 0);
                 
 				// Smooth movement
-				cardRect.localPosition = Vector3.Lerp(
-					cardRect.localPosition,
-					targetPos,
+				cardRect.anchoredPosition = Vector2.Lerp(
+					cardRect.anchoredPosition,  // ✅ Was: localPosition
+					new Vector2(xPos, 0),        // ✅ Use Vector2 for anchoredPosition
 					Time.deltaTime * 10f
 				);
                 
@@ -169,6 +170,15 @@ public class HandManager : MonoBehaviour
         
 		if (selectedCard == card)
 		{
+			// ✅ Find the index and remove by index (more reliable than reference)
+			int cardIndex = GameManager.Instance.hand.IndexOf(card);
+			if (cardIndex != -1)
+			{
+				GameManager.Instance.hand.RemoveAt(cardIndex);
+				Debug.Log($"[HandManager] Removed card at index {cardIndex} | Remaining: {GameManager.Instance.hand.Count}");
+			}
+			
+			
 			GameManager.Instance.PlayCard(card);
             
 			if (playAreaContainer != null)
@@ -222,9 +232,9 @@ public class HandManager : MonoBehaviour
 				float xPos = startX + (i * (cardSize.x + spacing));
 				Vector3 targetPos = new Vector3(xPos, 0, 0);
                 
-				cardRect.localPosition = Vector3.Lerp(
-					cardRect.localPosition,
-					targetPos,
+				cardRect.anchoredPosition = Vector2.Lerp(
+					cardRect.anchoredPosition,
+					new Vector2(xPos, 0),
 					Time.deltaTime * 15f
 				);
                 

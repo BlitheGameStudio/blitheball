@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections.Generic;
 
 public class StatsManager : MonoBehaviour
 {
@@ -17,6 +18,9 @@ public class StatsManager : MonoBehaviour
 	public int successfulRuns = 0;
 	public int totalQuartersWon = 0;
 	public int highestScoreEver = 0;
+	
+	public List<string> discoveredSynergies = new List<string>();
+	public int totalSynergiesDiscovered = 0;
     
 	void Awake()
 	{
@@ -107,5 +111,20 @@ public class StatsManager : MonoBehaviour
 			$"Quarters Won: {totalQuartersWon}\n" +
 			$"High Score: {highestScoreEver}\n" +
 			$"Current Run: {totalPointsScored} points, {totalCardsPlayed} cards";
+	}
+	
+	public void RecordSynergyDiscovery(string synergyName)
+	{
+		if (string.IsNullOrEmpty(synergyName) || discoveredSynergies.Contains(synergyName))
+			return;
+
+		discoveredSynergies.Add(synergyName);
+		totalSynergiesDiscovered++;
+    
+		Debug.Log($"[Stats] 🔓 Synergy Discovered: {synergyName} (Total: {totalSynergiesDiscovered})");
+    
+		// Optional: Persist to your save system
+		PlayerPrefs.SetInt($"Stats_SynergiesFound", totalSynergiesDiscovered);
+		PlayerPrefs.Save();
 	}
 }
