@@ -28,3 +28,4 @@ MonoBehaviour:
     targetCardType: 0
     value: 0
     multiplier: 2
+  chemistryTag: 4

@@ -14,11 +14,26 @@ public class PlayerCard : MonoBehaviour
 	public Image rarityGlow;
     
 	private bool isActive = true;
-    
+
+
 	public void Initialize(PlayerCardData cardData)
 	{
 		data = cardData;
 		UpdateVisuals();
+	}
+	
+	public ChemistryTag chemistryTag
+	{
+		get
+		{
+			if (data != null)
+				return data.chemistryTag;
+			else
+			{
+				Debug.LogWarning("CardData is null, returning None chemistry tag.");
+				return ChemistryTag.None;
+			}
+		}
 	}
     
 	void UpdateVisuals()
@@ -151,4 +166,6 @@ public class PlayerCard : MonoBehaviour
         
 		return modifier;
 	}
+	
+
 }

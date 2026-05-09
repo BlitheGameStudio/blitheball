@@ -162,6 +162,10 @@ public class GameManager : MonoBehaviour
 			playCountModifier += playerCard.GetPlayCountModifier();
 		}
         
+		// Add chemistry hand size bonus
+		ChemistrySystem.ChemistryBonus chemBonus = ChemistrySystem.CalculateBonuses(activePlayerCards);
+		handSizeModifier += chemBonus.handSize;
+        
 		Debug.Log($"Hand size modifier: {handSizeModifier}, Play count modifier: {playCountModifier}");
 	}
     
@@ -436,6 +440,13 @@ public class GameManager : MonoBehaviour
 				StatsManager.Instance?.RecordSynergyDiscovery(synergy.newlyDiscoveredName);
 			}
 		}
+		
+		// --- NEW: Apply chemistry bonuses ---
+		ChemistrySystem.ChemistryBonus chemBonus = ChemistrySystem.CalculateBonuses(activePlayerCards);
+		totalScore += Mathf.RoundToInt(chemBonus.scoreModifier);
+		totalMultiplier += chemBonus.multiplierModifier;
+		Debug.Log($"Chemistry bonuses applied: +{chemBonus.scoreModifier} score, +{chemBonus.multiplierModifier} multiplier");
+		// --- End chemistry bonuses ---
     
 		int finalScore = Mathf.RoundToInt(totalScore * totalMultiplier);
     

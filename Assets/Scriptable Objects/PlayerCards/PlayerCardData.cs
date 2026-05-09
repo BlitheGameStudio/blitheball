@@ -15,6 +15,9 @@ public class PlayerCardData : ScriptableObject
     
 	[Header("Effects")]
 	public PlayerEffect[] effects;
+	
+	public ChemistryTag chemistryTag;
+    
 }
 
 public enum PlayerCardType
@@ -30,6 +33,16 @@ public enum CardRarity
 	Uncommon,
 	Rare,
 	Legendary
+}
+
+public enum ChemistryTag
+{
+	None,
+	Veteran,
+	Rookie,
+	Sharpshooter,
+	Playmaker,
+	DefensiveAnchor
 }
 
 [System.Serializable]
